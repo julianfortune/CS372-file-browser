@@ -1,5 +1,5 @@
 # CS372 File Browser
-An extra credit project from CS 372 Fall 2019 at Oregon State.
+An extra credit project from CS 372 Fall 2019 at Oregon State that transfers files between two processes using only sockets and TCP.
 
 ## Demo
 
@@ -35,3 +35,13 @@ The file name needs to be the name of a file in the same directory as the server
 Observe the server program logs the request:
 
 ![Screen Shot 2020-09-23 at 3 55 08 PM](https://user-images.githubusercontent.com/25210657/94082311-84f86280-fdb5-11ea-9604-a5081657689b.png)
+
+### 4. Close the programs
+
+To quit the client just type `quit` and hit return.
+
+```
+> quit
+```
+
+To quit the server, use `ctr-C`. The server will catch the `SIG-TERM` and will release any connections and close the socket.
